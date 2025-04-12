@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#BAB4B4"
+        android:gravity="bottom|start"
+        android:text="@string/nameActivity"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="101dp"
+        android:text="@string/name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewName"
+        android:layout_alignStart="@id/textViewAge"
+        android:layout_alignEnd="@id/textViewHeight"
+        android:paddingLeft="8dp"
+        android:background="#CEC9C9"
+        android:inputType="text"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:layout_alignStart="@id/textViewName"
+        android:layout_marginTop="100dp"
+        android:text="@string/age"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/textViewAge"
+        android:layout_alignStart="@id/textViewAge"
+        android:layout_alignEnd="@id/textViewAge"
+        android:paddingLeft="8dp"
+        android:background="#CEC9C9"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewAge"
+        android:layout_alignTop="@id/textViewAge"
+        android:layout_marginLeft="15dp"
+        android:text="@string/weight"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/textViewWeight"
+        android:layout_alignStart="@id/textViewWeight"
+        android:layout_alignEnd="@id/textViewWeight"
+        android:paddingLeft="8dp"
+        android:background="#CEC9C9"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewWeight"
+        android:layout_alignTop="@id/textViewWeight"
+        android:layout_marginLeft="15dp"
+        android:text="@string/height"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_below="@id/textViewHeight"
+        android:layout_alignStart="@id/textViewHeight"
+        android:layout_alignEnd="@id/textViewHeight"
+        android:paddingLeft="8dp"
+        android:background="#CEC9C9"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
